@@ -4,29 +4,29 @@
 
 * Este projeto, possui uma página de login e outra de cadastro, para um grupo fictício.
 
-* E as duas páginas, possui o Dark Mode .
+* E as duas páginas, possui o Dark Mode.
 
-### Versão Mobile :
+### Versão Mobile 📱:
 
-<img src="" height="500px" width="260px" />
+<img src="imagens/mobilelc.gif" height="500px" width="260px" />
 
 ### Tablet :
 
 <img src="imagens/tablet.gif" />
 
-### Versão Desktop :
+### Versão Desktop 💻:
 
 <img src="imagens/desktop.gif" />
 
-### Dark Mode Mobile :
+### Dark Mode Mobile 🌑:
 
-<img src="" height="500px" width="260px" />
+<img src="imagens/dark_mobile.gif" height="500px" width="260px" />
 
-### Dark Mode Tablet :
+### Dark Mode Tablet 🌑:
 
 <img src="imagens/tablet_dark.gif" />
 
-### Dark Mode Desktop :
+### Dark Mode Desktop 🌑:
 
 <img src="imagens/desktop_dark.gif" />
 
