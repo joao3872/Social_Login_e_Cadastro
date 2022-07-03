@@ -1,0 +1,352 @@
+main .container {
+    position: relative;
+    border-radius: 20px;
+    width: 22rem;
+    background: var(--white-transparent);
+    box-shadow: var(--black-transparent);
+    margin: auto;
+    padding: 20px 0 30px 0;
+    margin-top: 5vh;
+}
+
+main .container form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main .container form .social {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 20px;
+}
+
+main .container form .social .btn_social {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: .7s;
+}
+
+main .container form .social .facebook {
+    border: 2px solid var(--blue-dark);
+    color: var(--blue-dark);
+}
+
+main .container form .social .facebook:hover {
+    color: var(--white);
+    background: var(--blue-dark);
+}
+
+main .container form .social .twitter {
+    border: 2px solid var(--blue-light);
+    color: var(--blue-light);
+}
+
+main .container form .social .twitter:hover {
+    color: var(--white);
+    background: var(--blue-light);
+}
+
+main .container form .social .github {
+    border: 2px solid var(--black);
+    color: var(--black);
+}
+
+main .container form .social .github:hover {
+    color: var(--white);
+    background: var(--black);
+}
+
+main .container form .area_login .divisa {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+main .container form .area_login, .area_cadastro {
+    width: 100%;
+    padding: 0 40px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+main .container form .area_login .input, .inputs {
+    width: 100%;
+    background: var(--white-transparent);
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-size: 17px;
+    line-height: 20px;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border: 2px solid var(--blue);
+}
+
+main .container form .area_cadastro .inputs {
+    border-color: var(--blue);
+}
+
+main .container form .area_login .btn_entrar, .btn_cadastrar {
+    background: var(--transparent);
+    width: 130px;
+    padding: 12px;
+    color: var(--green);
+    font-weight: bold;
+    font-size: 17px;
+    border: 2px solid var(--green);
+    cursor: default;
+    border-radius: 15px;
+    transition: .7s;
+    margin-bottom: 15px;
+}
+
+main .container form .area_login .btn_entrar:hover {
+    box-shadow: 0 .5em .5em -.4em var(--green);
+    transform: translateY(-.25em);
+}
+
+main .container form .area_cadastro .btn_cadastrar {
+    border-color: var(--orange-red);
+    color: var(--orange-red);
+    transition: .7s;
+}
+
+main .container form .area_cadastro .btn_cadastrar:hover {
+    box-shadow: 0 .5em .5em -.4em var(--orange-red);
+    transform: translateY(-.25em);
+}
+
+
+main .container .redefinir {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--blue-dark);
+    font-weight: bold;
+    padding-right: 25px;
+    margin-bottom: 15px;
+}
+
+main .container .redefinir:hover {
+    color: var(--blue-light);
+}
+
+main .container .secao_cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+main .container .secao_cadastro .btn_cadastro {
+    background: var(--transparent);
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    border-radius: 15px;
+}
+
+main .container .secao_cadastro .btn_cadastro:hover {
+    box-shadow: 0 .5em .5em -.4em var(--blue);
+    transform: translateY(-.25em);
+}
+
+main .container .redefinir, .link_voltar {
+    cursor: default;
+}
+
+main .container .voltar {
+    margin: 10px 0 0 45px;
+    font-size: 22px;
+    color: var(--blue-dark);
+}
+
+main .container .voltar:hover {
+    color: var(--blue-light);
+    margin-left: 35px;
+}
+
+
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    main .container {
+        width: 30rem;
+        margin-top: 3vh;
+    }
+
+    main .container form .area_login .btn_entrar {
+        cursor: pointer;
+    }
+
+    main .container .redefinir {
+        cursor: pointer;
+    }
+
+    main .container form h2, .redefinir, .secao_cadastro h1 {
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    main .container form .social .btn_social {
+        font-size: 20px;
+    }
+
+    main .container form .area_login .divisa {
+        font-size: 18px;
+    }
+
+    main .container .voltar {
+        font-size: 24px;
+    }
+
+    main .container .btn_cadastro, .btn_cadastrar, .voltar {
+        cursor: pointer;
+    }
+}
+
+
+
+@media screen and (min-width: 901px) {
+    main .container {
+        width: 28rem;
+        margin-top: 1vh;
+    }
+
+    main .container form .area_login .btn_entrar {
+        cursor: pointer;
+    }
+
+    main .container .redefinir {
+        cursor: pointer;
+    }
+
+    main .container form h2, .redefinir, .secao_cadastro h1 {
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    main .container form .social .btn_social {
+        font-size: 22px;
+    }
+
+    main .container form .area_login {
+        width: 100%;
+    }
+
+    main .container form .area_login .divisa {
+        font-size: 20px;
+    }
+
+    main .container .voltar {
+        font-size: 26px;
+    }
+
+    main .container .btn_cadastro, .btn_cadastrar, .voltar {
+        cursor: pointer;
+    }
+}
+
+
+
+@media screen and (prefers-color-scheme: dark) {
+    main .container {
+        background: var(--black);
+        box-shadow: 10px 5px 5px var(--white-transparent);
+    }
+
+    main .container form h2 {
+        color: var(--white);
+    }
+
+    main .container form .social .facebook {
+        border-color: var(--blue);
+        color: var(--blue);
+    }
+
+    main .container form .social .facebook:hover {
+        background: var(--blue);
+        color: var(--black);
+    }
+
+    main .container form .social .twitter:hover {
+        color: var(--black);
+    }
+
+    main .container form .social .github {
+        color: var(--white);
+        border-color: var(--white);
+    }
+
+    main .container form .social .github:hover {
+        color: var(--black);
+        background: var(--white);
+    }
+
+    main .container form .area_login .divisa p {
+        color: var(--white);
+    }
+
+    main .container form .area_login .input {
+        border-color: var(--blue-dark);
+    }
+
+    main .container form .area_login .btn_entrar {
+        color: var(--green-light);
+        border-color: var(--green-light);
+    }
+
+    main .container form .area_login .btn_entrar:hover {
+        transform: translateY(-.25em);
+        box-shadow: 0 .5em .5em -.4em var(--green-light);
+    }
+
+    main .container .redefinir {
+        color: var(--blue-light);
+    }
+
+    main .container .redefinir:hover {
+        color: var(--blue);
+    }
+
+    main .container .secao_cadastro h1 {
+        color: var(--white);
+    }
+
+    main .container .secao_cadastro a .btn_cadastro {
+        color: var(--blue-light);
+        border-color: var(--blue-light);
+    }
+
+    main .container .secao_cadastro a .btn_cadastro:hover {
+        box-shadow: 0 .5em .5em -.4em var(--blue-light);
+        transform: translateY(-.25em);
+    }
+
+    main .container form .area_cadastro .inputs {
+        border-color: var(--blue-light);
+    }
+
+    main .container form .area_cadastro .btn_cadastrar {
+        border-color: var(--orangered-light);
+        color: var(--orangered-light);
+    }
+
+    main .container form .area_cadastro .btn_cadastrar:hover {
+        transform: translateY(-.25em);
+        box-shadow: 0 .5em .5em -.4em var(--orangered-light);
+    }
+
+    main .container .voltar {
+        color: var(--blue-light);
+    }
+
+    main .container .voltar:hover {
+        color: var(--blue);
+    }
+}
