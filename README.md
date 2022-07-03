@@ -18,6 +18,18 @@
 
 <img src="imagens/desktop.gif" />
 
+### Dark Mode Mobile :
+
+<img src="" height="500px" width="260px" />
+
+### Dark Mode Tablet :
+
+<img src="imagens/tablet_dark.gif" />
+
+### Dark Mode Desktop :
+
+<img src="imagens/desktop_dark.gif" />
+
 ### Experimente você mesmo:
 
 * #### <a href="https://joao3872.github.io/Social_Login_e_Cadastro/" target="_blank">Acesse Aqui</a>
