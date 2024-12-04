@@ -155,10 +155,6 @@ function changeTheme(event) {
                 }
             })
         }
-    } else {
-        hoverOn()
-        hoverOff()
-        touchHover(screenTouch)
     }
 }
 
