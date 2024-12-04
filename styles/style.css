@@ -24,38 +24,35 @@ main .container form .social {
 main .container form .social .btn_social {
     padding: 10px 15px;
     border-radius: 8px;
-    font-size: 18px;
     transition: .7s;
 }
 
 main .container form .social .facebook {
     border: 2px solid var(--blue-dark);
-    color: var(--blue-dark);
 }
 
 main .container form .social .facebook:hover {
-    color: var(--white);
     background: var(--blue-dark);
 }
 
 main .container form .social .twitter {
     border: 2px solid var(--blue-light);
-    color: var(--blue-light);
 }
 
 main .container form .social .twitter:hover {
-    color: var(--white);
     background: var(--blue-light);
 }
 
 main .container form .social .github {
     border: 2px solid var(--black);
-    color: var(--black);
 }
 
 main .container form .social .github:hover {
-    color: var(--white);
     background: var(--black);
+}
+
+main .container form .social .btn_social .icons {
+    height: 18px;
 }
 
 main .container form .area_login .divisa {
@@ -165,12 +162,10 @@ main .container .redefinir, .link_voltar {
 
 main .container .voltar {
     margin: 10px 0 0 45px;
-    font-size: 22px;
-    color: var(--blue-dark);
+    height: 22px;
 }
 
 main .container .voltar:hover {
-    color: var(--blue-light);
     margin-left: 35px;
 }
 
@@ -198,12 +193,16 @@ main .container .voltar:hover {
         font-size: 20px;
     }
 
+    main .container form .social .btn_social .icons {
+        height: 20px;
+    }
+
     main .container form .area_login .divisa {
         font-size: 18px;
     }
 
     main .container .voltar {
-        font-size: 24px;
+        height: 24px;
     }
 
     main .container .btn_cadastro, .btn_cadastrar, .voltar {
@@ -235,6 +234,10 @@ main .container .voltar:hover {
         font-size: 22px;
     }
 
+    main .container form .social .btn_social .icons {
+        height: 22px;
+    }
+
     main .container form .area_login {
         width: 100%;
     }
@@ -244,7 +247,7 @@ main .container .voltar:hover {
     }
 
     main .container .voltar {
-        font-size: 26px;
+        height: 26px;
     }
 
     main .container .btn_cadastro, .btn_cadastrar, .voltar {
@@ -266,25 +269,17 @@ main .container .voltar:hover {
 
     main .container form .social .facebook {
         border-color: var(--blue);
-        color: var(--blue);
     }
 
     main .container form .social .facebook:hover {
         background: var(--blue);
-        color: var(--black);
-    }
-
-    main .container form .social .twitter:hover {
-        color: var(--black);
     }
 
     main .container form .social .github {
-        color: var(--white);
         border-color: var(--white);
     }
 
     main .container form .social .github:hover {
-        color: var(--black);
         background: var(--white);
     }
 
@@ -340,13 +335,5 @@ main .container .voltar:hover {
     main .container form .area_cadastro .btn_cadastrar:hover {
         transform: translateY(-.25em);
         box-shadow: 0 .5em .5em -.4em var(--orangered-light);
-    }
-
-    main .container .voltar {
-        color: var(--blue-light);
-    }
-
-    main .container .voltar:hover {
-        color: var(--blue);
     }
 }
