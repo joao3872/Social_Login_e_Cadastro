@@ -22,7 +22,7 @@ main .container form .social {
 }
 
 main .container form .social .btn_social {
-    padding: 10px 15px;
+    padding: 12px 15px;
     border-radius: 8px;
     transition: .7s;
 }
