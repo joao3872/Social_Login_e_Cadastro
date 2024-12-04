@@ -122,6 +122,10 @@ const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)')
 function changeTheme(event) {
     if (event.matches) {
         for (let c = 0; c < btn.length; c++) {
+            btn[0].setAttribute('src', 'imagens/facebook-brands-solid.svg')
+            btn[1].setAttribute('src', 'imagens/twitter-brands-solid.svg')
+            btn[2].setAttribute('src', 'imagens/github-brands2.svg')
+            
             btn[c].addEventListener('mouseenter', () => {
                 if (btn[c] == btn[0]) {
                     icons[0].setAttribute('src', 'imagens/facebook-brands-solid3.svg')
