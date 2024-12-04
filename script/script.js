@@ -14,10 +14,13 @@ function hoverOn() {
         btn[c].addEventListener('mouseenter', () => {
             if (btn[c] == btn[0]) {
                 icons[0].setAttribute('src', 'imagens/facebook-brands-solid2.svg')
+                btn[0].style.background = 'var(--blue-dark)'
             } else if (btn[c] == btn[1]) {
                 icons[1].setAttribute('src', 'imagens/twitter-brands-solid2.svg')
+                btn[1].style.background = 'var(--blue-light)'
             } else {
                 icons[2].setAttribute('src', 'imagens/github-brands2.svg')
+                btn[2].style.background = 'var(--black)'
             }
         })
     }
@@ -33,10 +36,13 @@ function hoverOff() {
         btn[c].addEventListener('mouseleave', () => {
             if (btn[c] == btn[0]) {
                 icons[0].setAttribute('src', 'imagens/facebook-brands-solid.svg')
+                btn[0].style.background = 'none'
             } else if (btn[c] == btn[1]) {
                 icons[1].setAttribute('src', 'imagens/twitter-brands-solid.svg')
+                btn[1].style.background = 'none'
             } else {
                 icons[2].setAttribute('src', 'imagens/github-brands-solid.svg')
+                btn[2].style.background = 'none'
             }
         })
     }
@@ -54,10 +60,13 @@ function touchHover(event) {
             btn[c].addEventListener('touchstart', () => {
                 if (btn[c] == btn[0]) {
                     icons[0].setAttribute('src', 'imagens/facebook-brands-solid2.svg')
+                    btn[0].style.background = 'var(--blue-dark)'
                 } else if (btn[c] == btn[1]) {
                     icons[1].setAttribute('src', 'imagens/twitter-brands-solid2.svg')
+                    btn[1].style.background = 'var(--blue-light)'
                 } else {
                     icons[2].setAttribute('src', 'imagens/github-brands2.svg')
+                    btn[2].style.background = 'var(--black)'
                 }
             })
 
@@ -65,10 +74,13 @@ function touchHover(event) {
                 setTimeout(() => {
                     if (btn[c] == btn[0]) {
                         icons[0].setAttribute('src', 'imagens/facebook-brands-solid.svg')
+                        btn[0].style.background = 'none'
                     } else if (btn[c] == btn[1]) {
                         icons[1].setAttribute('src', 'imagens/twitter-brands-solid.svg')
+                        btn[1].style.background = 'none'
                     } else {
                         icons[2].setAttribute('src', 'imagens/github-brands-solid.svg')
+                        btn[2].style.background = 'none'
                     }
                 }, 3000)
             })
@@ -77,3 +89,27 @@ function touchHover(event) {
 }
 
 touchHover(screenTouch)
+
+
+
+function iconVoltar() {
+    voltar.addEventListener('mouseenter', () => {
+        voltar.setAttribute('src', 'imagens/arrow-left-solid2.svg')
+    })
+
+    voltar.addEventListener('mouseleave', () => {
+        voltar.setAttribute('src', 'imagens/arrow-left-solid.svg')
+    })
+
+    voltar.addEventListener('touchstart', () => {
+        voltar.setAttribute('src', 'imagens/arrow-left-solid2.svg')
+    })
+
+    voltar.addEventListener('touchend', () => {
+        setTimeout(() => {
+            voltar.setAttribute('src', 'imagens/arrow-left-solid.svg')
+        }, 3000)
+    })
+}
+
+iconVoltar()
