@@ -92,29 +92,6 @@ touchHover(screenTouch)
 
 
 
-function iconVoltar() {
-    voltar.addEventListener('mouseenter', () => {
-        voltar.setAttribute('src', 'imagens/arrow-left-solid2.svg')
-    })
-
-    voltar.addEventListener('mouseleave', () => {
-        voltar.setAttribute('src', 'imagens/arrow-left-solid.svg')
-    })
-
-    voltar.addEventListener('touchstart', () => {
-        voltar.setAttribute('src', 'imagens/arrow-left-solid2.svg')
-    })
-
-    voltar.addEventListener('touchend', () => {
-        setTimeout(() => {
-            voltar.setAttribute('src', 'imagens/arrow-left-solid.svg')
-        }, 3000)
-    })
-}
-
-iconVoltar()
-
-
 
 
 const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)')
@@ -122,9 +99,9 @@ const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)')
 function changeTheme(event) {
     if (event.matches) {
         for (let c = 0; c < btn.length; c++) {
-            btn[0].setAttribute('src', 'imagens/facebook-brands-solid.svg')
-            btn[1].setAttribute('src', 'imagens/twitter-brands-solid.svg')
-            btn[2].setAttribute('src', 'imagens/github-brands2.svg')
+            icons[0].setAttribute('src', 'imagens/facebook-brands-solid.svg')
+            icons[1].setAttribute('src', 'imagens/twitter-brands-solid.svg')
+            icons[2].setAttribute('src', 'imagens/github-brands2.svg')
             
             btn[c].addEventListener('mouseenter', () => {
                 if (btn[c] == btn[0]) {
@@ -165,3 +142,28 @@ prefersColorScheme.addListener(changeTheme)
 // Após as mudanças serem escutadas, as mudanças são aplicadas.
 
 changeTheme(prefersColorScheme)
+
+
+
+
+function iconVoltar() {
+    voltar.addEventListener('mouseenter', () => {
+        voltar.setAttribute('src', 'imagens/arrow-left-solid2.svg')
+    })
+
+    voltar.addEventListener('mouseleave', () => {
+        voltar.setAttribute('src', 'imagens/arrow-left-solid.svg')
+    })
+
+    voltar.addEventListener('touchstart', () => {
+        voltar.setAttribute('src', 'imagens/arrow-left-solid2.svg')
+    })
+
+    voltar.addEventListener('touchend', () => {
+        setTimeout(() => {
+            voltar.setAttribute('src', 'imagens/arrow-left-solid.svg')
+        }, 3000)
+    })
+}
+
+iconVoltar()
