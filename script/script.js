@@ -145,7 +145,7 @@ function changeTheme(event) {
                     btn[1].style.background = 'var(--blue-light)'
                 } else {
                     icons[2].setAttribute('src', 'imagens/github-brands-solid.svg')
-                    btn[2].style.background = 'var(--black)'
+                    btn[2].style.background = 'var(--white)'
                 }
             })
 
