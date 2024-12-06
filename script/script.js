@@ -132,6 +132,38 @@ function changeTheme(event) {
                 }
             })
         }
+
+
+
+        for (let c = 0; c < btn.length; c++) {
+            btn[c].addEventListener('touchstart', () => {
+                if (btn[c] == btn[0]) {
+                    icons[0].setAttribute('src', 'imagens/facebook-brands-solid3.svg')
+                    btn[0].style.background = 'var(--blue-dark)'
+                } else if (btn[c] == btn[1]) {
+                    icons[1].setAttribute('src', 'imagens/twitter-brands-solid3.svg')
+                    btn[1].style.background = 'var(--blue-light)'
+                } else {
+                    icons[2].setAttribute('src', 'imagens/github-brands-solid.svg')
+                    btn[2].style.background = 'var(--black)'
+                }
+            })
+
+            btn[c].addEventListener('touchend', () => {
+                setTimeout(() => {
+                    if (btn[c] == btn[0]) {
+                        icons[0].setAttribute('src', 'imagens/facebook-brands-solid.svg')
+                        btn[0].style.background = 'none'
+                    } else if (btn[c] == btn[1]) {
+                        icons[1].setAttribute('src', 'imagens/twitter-brands-solid.svg')
+                        btn[1].style.background = 'none'
+                    } else {
+                        icons[2].setAttribute('src', 'imagens/github-brands2.svg')
+                        btn[2].style.background = 'none'
+                    }
+                }, 3000)
+            })
+        }
     }
 }
 
